@@ -1,5 +1,7 @@
 import socket
 
+def recep():
+    print ("Receiving")
 
 
 if __name__ == '__main__':
@@ -8,4 +10,5 @@ if __name__ == '__main__':
     print ("Connected to server")
     client_socket.send('start'.encode())
     data = client_socket.recv(1024).decode()
+    print ("Received: " + data)
     client_socket.close()

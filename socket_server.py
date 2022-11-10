@@ -1,8 +1,9 @@
 import socket
 
 def recep():
+    print ("Waiting for connection")
     
-
+    
 if __name__ == '__main__':
     server_socket = socket.socket()
     server_socket.bind(('127.0.0.1', 10000))
@@ -11,4 +12,5 @@ if __name__ == '__main__':
     conn, address = server_socket.accept()
     data = conn.recv(1024).decode()
     conn.send('stop'.encode())
+    print ("Received: " + data)
     conn.close()
