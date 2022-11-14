@@ -3,7 +3,6 @@ import socket
 def recep():
     print ("Receiving")
 
-
 if __name__ == '__main__':
     client_socket = socket.socket()
     client_socket.connect(('127.0.0.1', 10000))

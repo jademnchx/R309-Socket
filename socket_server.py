@@ -2,8 +2,7 @@ import socket
 
 def recep():
     print ("Waiting for connection")
-    
-    
+
 if __name__ == '__main__':
     server_socket = socket.socket()
     server_socket.bind(('127.0.0.1', 10000))
